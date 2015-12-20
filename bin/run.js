@@ -2,11 +2,11 @@
 
 var Roboat = require('../lib/roboat');
 
-var token = process.env.BOT_API_KEY;
+var token = process.env.BOT_API_KEY.trim();
 var name = process.env.BOT_NAME;
 
 var roboat = new Roboat({
-	token: "xoxb-16684972324-HB5B89jvsCop3D00qJHWmUxI",
+	token: token,
 	name: name
 });
 
